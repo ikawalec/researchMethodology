@@ -1,0 +1,7 @@
+*.pdf
+*.gz
+*.*~
+.project
+.texclipse
+tmp
+
