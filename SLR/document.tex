@@ -1,17 +1,21 @@
 % !TEX encoding = UTF-8 Unicode
 \documentclass[times, 10pt,twocolumn]{article} 
 \usepackage{latex8}    
-\usepackage{times}  
+\usepackage{times}
+\usepackage{url}  
+\usepackage{listings}
+
 
 \pagestyle{empty}
 
-\begin{document}
+\begin{document} 
 
 \title{ Systematic Literature Review
        for Large Scale and High Performance NoSQL Databases in Web Applications}
 
-\author{Mateusz Bilski\\ Ireneusz Kawalec \\ Radoslaw Wilczak, radekwilczak@gmail.com\\ Computer Science TUTAJ MEJLE DOPISAC \\
-Wroclaw University of Technology\\ Faculty of Electronics \\ 
+% \\ Radoslaw Wilczak, radekwilczak@gmail.com\\ 
+\author{Mateusz Bilski, 181117@student.pwr.wroc.pl \\ Ireneusz Kawalec, 180528@student.pwr.wroc.pl \\ 
+Wroclaw University of Technology\\ Faculty of Electronics \\ Computer Science \\ Internet Engineering  \\  
 }
 
 \maketitle
@@ -58,7 +62,8 @@ Relation Databases and Object Oriented Databases.
 
 Relation database consists of specific number of tables and each has a distinguish column named primary key. 
 They are matured, well documented, tested and commonly used. Several examples of then are: MySQL, Oracle, MS SQL, PostgreSQL. 
-ROZWINAC - OPISAC CZYM SIE ROZNIA, ZALOZENIA COSTAM COSTAM 
+% TODO
+% ROZWINAC - OPISAC CZYM SIE ROZNIA, ZALOZENIA COSTAM COSTAM 
 
 Object oriented database was developed in response to expansion of object oriented programming. In addition to ensure high scalability and  
 performance in current information systems.
@@ -66,22 +71,22 @@ performance in current information systems.
 The architecture of database system has a big influence of performance. Single machine has a limited
 resources, so this is a reason why enterprise systems  are composed of a lot of them.
 
-
 %------------------------------------------------------------------------- 
 \Section{Research Questions}
 
 During the Systematic Research Review following questions will be posed: 
 
-maxymalnie dwa punkty, wywalic
-
 \begin{itemize}
   \item What are all available NoSQL databases
-  \item co do tej pory zostalo zreserczerowane na ten temat 
+  % \item co do tej pory zostalo zreserczerowane na ten temat
+  % to summarize existing \ldots 
+  \item How advanced research on large scale and high performace NoSQL databases are 
 \end{itemize}
 
-tutaj outcomes - co jest wynikiem researchu - spodziewane
-
-The outcomes of the research would be knowledge what has been written in topic of our interest. // sprawd?cie czy to zdanie ma jaki? sens
+% tutaj outcomes - co jest wynikiem researchu - spodziewane
+% TODO
+% // sprawd?cie czy to zdanie ma jaki? sens
+The outcomes of the research would be knowledge what has been written in topic of our interest.
 
 \Section{Research method}
 
@@ -93,7 +98,7 @@ research question, or topic area, or phenomenon of interest.} \cite[p.~3]{kitche
 ~\\
 ~\\
 Systematic Literature Review it is a search of all available studies and scientific articles in the field to see what was written on The Topic. 
-This is done befor research work, becouse it is important not to investigate something that is allready well explore by someone. To achieve this 
+This is done before research work, because it is important not to investigate something that is already well explored by someone. To achieve this 
 we have to be very honest and rigorous for ourselves and our review. The bases of SLR are creating a protocol and well documenting it. One of 
 purpose of documenting it is to enable for someone from the outside to asses the quality of our work. 
 
@@ -112,8 +117,7 @@ strategy, inclusion, exclusion and quality criteria, data extraction, and method
 
 \SubSection{Inclusion and exclusion criteria}
 
-
-Studies were eligible for inclusion in the review if the topic was about NoSQL databases. We decided that we need to find as many information regarding this topic as posible.
+Studies were eligible for inclusion in the review if the topic was about NoSQL databases. We decided that we need to find as many information regarding this topic as possible.
 The second criteria was if the studies are releated with high performance or high scale for either SQL or NoSQL databases. Only studies written in English were included.
 We also included papers which covers comparision of available NoSQL databases.
 
@@ -121,20 +125,22 @@ Studies were excluded if they main focus was on SQL databases without considerin
 with huge complexity (those which follows third normal form or higher) it was also excluded. Furthermore, our reseach topis is highly related with industry, so we excluded all papers 
 which does not have any usage in industry.
 
-\SubSection{Data sources and search strategy}
-
+\SubSection{Data sources and search strategy}  
 
 For search strategy it was choose to search digital libraries like:
 \begin{itemize}
 	\item ACM
 	\item IEEEXplore
-	\item Compendex
+	%\item Compendex
 	\item Google Scholar
-	\item SpringerLink
+	%\item SpringerLink
 \end{itemize}
 
-There were searched using following searched phrase:
+Moreover, Google was used to expand result of systematic research review.
+
+Data sources were searched using following phrases:
 \begin{enumerate}
+    \item NoSQL database 
 	\item NoSQL and SQL
 	\item high performance database
 	\item large scale database
@@ -142,68 +148,178 @@ There were searched using following searched phrase:
 	\item database scalability
 \end{enumerate}
 
-
 %------------------------------------------------------------------------- 
 \Section{Execution of protocol}
 
-opisac jak to sie tam szukalo, czyli ze szukalismy, znalezlismy 200,
-wyjebalismy 100 na podstawie czegos, potem wyjebalismy 80 na podstawie 
-czegos tam innego. A potem po przeczytaniu ich wyjebalismy jescze 16 i zostaly
-4
+%opisac jak to sie tam szukalo, czyli ze szukalismy, znalezlismy 200,
+%wyjebalismy 100 na podstawie czegos, potem wyjebalismy 80 na podstawie 
+%czegos tam innego. A potem po przeczytaniu ich wyjebalismy jescze 16 i zostaly 4
 
-\ldots
+Once we have defined search citeria of our interest, we started literature extration process.
+Search phrases were combined by using boolean operators OR and AND:
+
+\emph{(nosql OR sql OR nosql sql) AND database AND (comparison OR high performance OR large scale OR scalability)}
+  
+We went through data sources to find answer for research questions.
+In ACM digital library we discovered 70 related results, 41 articles were found in IEEEXplore and finally 48 materials in Google Scholar.
+Summing up 159 materials were investigated. 
+
+Based on exclusion criteria some of references were rejected. A lot of examinated works were too basic or were focues only on SQL databases.
+Finally we received 16 scientific artices, 1 book, 1 Master Thesis and 1 website which will be described in next section. 
 
 %------------------------------------------------------------------------ 
 
 \Section{Analisis}   
 
-na podstawie protokolu, tych prac ktore wybralismy, czytami i dokonujemy analizy ich.
-analiza to badanie kazdej pracy.
+% TODO pl na podstawie protokolu, tych prac ktore wybralismy, czytami i dokonujemy analizy ich.
+% analiza to badanie kazdej pracy.
+
+Good starting point describing NoSQL databases in general, can be found in \cite{survey}, \cite{strauch}, \cite{leavittm} and \cite{prasad}. Interesting 
+comparison of NoSQL and SQL databases was promised in article \cite{cattell}. Although a lot of references points to some popular NoSQL database currently 
+available and commonly used, but the biggest source was found on website \cite{nosql-database} (almost 150 NoSQL databases). Practial aspects of using NoSQL 
+databases in web applications were contained in \cite{tiwari} \cite{orend}, \cite{pokorny}. High performance issues were mentioned in \cite{taniar} and \cite{delis}.
+Hudge amounts of articles refers to cloud solutions (\cite{sakr}, \cite{konstantinou}, \cite{delis}). Some of the articles describes database system with hudge 
+complexity \cite{rizzotti}. 
 
 \Section{Synthesize}   
 
-A synteza to przetowozenie wynikow i zabranie tego do kupy.
+% TODO PL A synteza to przetowozenie wynikow i zabranie tego do kupy.
 
-\ldots
+% Jeśli chodzi o listę dostępnych baz NoSQL to mimo ich dużej ilości tylko 5-7 głownych baz jest dobrze opisane w literaturze.
+% Jeśli chodzi o wydajność to dużo odnosi się do usług w chmurze
+% Mało jest artykułów które konkretnie opisują jakiś scenariusz i zalejacą którą bazę wybrać do tworzonego projektu
+
+In analysed articles only most popular NoSQL databases were described, e.g HBase, MongoDB, Cassandra, SimpleDB.
+Invesitaged works contains valuable information concerning high performance and scalability. 
 
 %------------------------------------------------------------------------- 
 \Section{Conclusion} 
 
-trzeba napisac ze takie a takie rzeczy sa juz opisane dobrze, ale znalezlismy dziura, ktora
-nie zostala jeszcze dobrze zliteralizowana i sie fajnie
+% TODO PL trzeba napisac ze takie a takie rzeczy sa juz opisane dobrze, ale znalezlismy dziura, ktora
+% nie zostala jeszcze dobrze zliteralizowana i sie fajnie
+
+% Luką jest brak konkretnych przykładów użycia nosql baz danych w aplikacjach webowych 
+
+During systematic literature review we encounter some gap.
+There is really no specific document which would describe real world scenario like database for web 
+application able to handle 1 milion of users.
 
 %------------------------------------------------------------------------- 
 \begin{thebibliography}{9}
 
-\bibitem{kitchenham}
-  B.A. Kitchenham,
-  \emph{Guidelines for performing Systematic Literature Reviews in Software Engineering Version 2.3}.
-  Keele University and University of Durham,
-  EBSE Technical Report,
-  2007.
-
+	\bibitem{kitchenham} 
+	  B.A. Kitchenham,
+	  \emph{Guidelines for performing Systematic Literature Reviews in Software Engineering Version 2.3}.
+	  Keele University and University of Durham,
+	  EBSE Technical Report,
+	  2007.
+  
+      \bibitem{strauch}
+  	  Christof Strauch, 
+      \emph{NoSQL Databases}. Stuttgart Media University.
+      
+      \bibitem{datastax}
+  	  Datastax Corporation, 
+      \emph{Benchmarking Top NoSQL Databases}. February 2013.
+      
+      \bibitem{survey}
+  	  Jing Han, Haihong E, Guan Le,
+      \emph{Survey on NoSQL Database}. Beijing University of Posts and Telecommunications.
+      
+      \bibitem{strauch2}
+  	  Christof Strauch, 
+      \emph{NoSQL Databases: a step to database scalability in Web environment}. Stuttgart Media University.
+      
+      \bibitem{pokorny}
+  	   Jaroslav Pokorny, 
+      \emph{NoSQL Databases}. Charles University.
+      
+      \bibitem{cattell}
+  	  Rick Cattell, 
+      \emph{Scalable SQL and NoSQL Data Stores}. Cattell.Net Software.
+      
+      \bibitem{xiang}
+  	  Peng Xiang, Ruichun Hou and Zhiming Zhou, 
+      \emph{Cache and Consistency in NOSQL}. Information Engineering Center, Ocean University of China.
+      
+      \bibitem{leavittm}
+  	  Neal Leavittm 
+      \emph{Will NoSQL Databases Live Up to Their Promise}. Technology News.
+      
+      \bibitem{delis}
+  	  Alexios Delis, Nick Roussopoulos, 
+      \emph{Performance and Scalability of Client-Server Database Architectures}. University of Maryland.
+      
+      \bibitem{tudorica}
+  	  Bogdan George Tudorica, Cristian Bucur, 
+      \emph{A comparison between several NoSQL databases with comments and notes}. Petroleum-Gas University of Ploiesti, Ploiesti, Romania.
+      
+      \bibitem{taniar}
+  	  David Taniar, 
+      \emph{High Performance Database Processing}. Clayton School of Information Technology, Clayton, Victoria, Australia.
+      
+      \bibitem{konstantinou}
+  	  Ioannis Konstantinou, Evangelos Angelou, Christina Boumpouka, Dimitrios Tsoumakos, Nectarios Koziris, 
+      \emph{On the Elasticity of NoSQL Databases over Cloud Management Platforms}. National Technical University of Athens, Greece.
+      
+      \bibitem{chakrabarti}
+  	  Aniket Chakrabarti, Christopher Stewart,
+      \emph{Efficent Latency Management in NoSQL Stores}. The Ohio State University.
+      
+      \bibitem{rizzotti}
+  	  Nicolas Ruﬂin, Helmar Burkhart, Sven Rizzotti, 
+      \emph{Social-Data Storage-Systems}.  University of Basel, Switzerland.
+      
+      \bibitem{tiwari}
+  	  Shashank Tiwari, 
+      \emph{Professional NoSQL}. Indianapolis, Ind. : John Wiley \& Sons, 2011.
+      
+      \bibitem{orend}
+  	  Kai Orend, 
+      \emph{Analysis and Classification of NoSQL Databases and Evaluation of their Ability to Replace an Object-relational Persistence Layer}. Master's Thesis. Technische Universitat Munchen.
+      
+      \bibitem{prasad}
+  	  Rabi Prasad, 
+      \emph{RDBMS to NoSQL: Reviewing Some Next-Generation Non-Relational Database's}. Stuttgart Media University.
+      
+      \bibitem{hecht}
+  	  Robin Hecht, Stefan Jablonski,
+      \emph{NoSQL Evaluation - A Use Case Oriented Survey}. Patra Berhampur University India.
+      
+      \bibitem{sakr}
+  	  Sherif Sakr, 
+      \emph{Supply cloud-level data scalability with NoSQL databases}. National ICT Australia.
+      
+      \bibitem{nosql-database}
+      \emph{The biggest list of nosql databases} available at
+      \url{http://nosql-database.org/}
+      
+      %\bibitem{nosql-benchmarking}
+      %\emph{NoSQL Benchmarking} available at
+      %\url{http://www.cubrid.org/blog/dev-platform/nosql-benchmarking/}
+      
 \end{thebibliography}
 
 %------------------------------------------------------------------------- 
 \nocite{ex1,ex2}
 \bibliographystyle{latex8} 
 
-HARMONOGRAM
-Radek: Reseach Method : poniedziałek 8 rano
-Mateusz: Protocol : wtorek 8 rano
-Ireneusz: Execution of protocol czwartek 8 rano
-Radek: Analisis sobota 8 rano
-Mateusz: Conclusion sobota 8 rano
-Irek: Synthesiza sobota 8 rano
-Niedziela wieczor: spotykamy sie i dopinamy calos + initial assigmenet 2 o 17 I MA BYC JUZ PO ANG
+%HARMONOGRAM
+%Radek: Reseach Method : poniedziałek 8 rano
+%Mateusz: Protocol : wtorek 8 rano
+%Ireneusz: Execution of protocol czwartek 8 rano
+%Radek: Analisis sobota 8 rano
+%Mateusz: Conclusion sobota 8 rano
+%Irek: Synthesiza sobota 8 rano
+%Niedziela wieczor: spotykamy sie i dopinamy calos + initial assigmenet 2 o 17 I MA BYC JUZ PO ANG
 
 
-DRUGI
-ASSIGMENT 2 do niedzieli
-BACKGROUND: Ireneusz
-ABSSTRACT + keywords: Mateusz
-introduction: Radek
-Research question: Mateusz
-outcomes: Radek
+%DRUGI
+%ASSIGMENT 2 do niedzieli
+%BACKGROUND: Ireneusz
+%ABSSTRACT + keywords: Mateusz
+%introduction: Radek
+%Research question: Mateusz
+%outcomes: Radek
 
 \end{document}
