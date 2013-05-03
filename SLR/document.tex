@@ -4,29 +4,34 @@
 \usepackage{times}
 \usepackage{url}  
 \usepackage{listings}
-
-
+\newcounter{firstbib}
+ 
 \pagestyle{empty}
 
 \begin{document} 
 
 \title{ Systematic Literature Review
-       for Large Scale and High Performance NoSQL Databases in Web Applications}
-
-% \\ Radoslaw Wilczak, radekwilczak@gmail.com\\ 
+       of Large Scale and High Performance NoSQL Databases in Web Applications}
 \author{Mateusz Bilski, 181117@student.pwr.wroc.pl \\ Ireneusz Kawalec, 180528@student.pwr.wroc.pl \\ 
 Wroclaw University of Technology\\ Faculty of Electronics \\ Computer Science \\ Internet Engineering  \\  
 }
 
 \maketitle
-\thispagestyle{empty}
+\thispagestyle{empty} 
 
 \begin{abstract}  
 
-The reason of this document is to normalise, support and define Systematic Literature Review process for the topic.
-It would be define problems that lurk for complex database systems used in big enterprises. 
-It would be discuss the differences, virtue and vice of database systems based on Relational Databases and Object Orientated Databases.
-It would be list objectives which will help achieving the aim.
+The aim of this document is to define and describe results of Systematic Literature Review process which 
+refers to the area of Large Scale and High Performance NoSQL Databases in Web Applications.
+
+This document contains a protocol describig the way of finding crucial informations related to complex database systems used in the big enterprises.   
+Both Relational Databases and Object Orientated Databases were concerned.
+
+The execution of protocol determines repetitive process in which such elements as  
+inclusion and exclusion criterias, researched data sources were described. 
+
+The concluions delivers the answers to the following questions:
+What NoSQL databases are described in the publications? What is known about high performance and large scale NoSQL databases?
 
 \end{abstract} 
 
@@ -36,40 +41,41 @@ keywords: database, NoSQL, large scale, high performance, web application
 \Section{Introduction}
 
 Databases are used almost in all aspects of software engineering. Each 
-information systems needs a place to storage a data. But each system is different
-and requires different approaches. The key roles is to select the right solution.
-In nowadays global web applications involves handling of huge load, high performance and
-availability. Good examples of such services are Facebook or Google Mail.
+information system needs a place to storage a data. However, due to the complexity of the systems 
+the key role is to provide the proper solution.
 
-Relational databases occurs to be inefficient in this case. Strong complexity and
+Modern web applications should handle a huge load and maintain high performance and
+availability. Good examples of such services are Facebook, Amazon, eBay and Google Mail.
+
+Relational databases occur to be inefficient in this case. Strong complexity and
 heave coupling causes low performance. The solution for that issues are Object Oriented
 Databases which ensure high scalability.
 
 Our aim is to compare available NoSQL databases and to select the best one by evaluating 
-optimal architecture that will fulfil requirements. 
+optimal architecture that will fulfill requirements. 
 
 The first step to achieve this target is to investigate systematic literature review in this area.
-By doing it we want to find out answers for our research questions.
+It can be done by finding answers to research questions.
 
-This kind of knowledge is really valuable from enterprise perspective. However each database
-system has different requirements so it is impossible to prepare one common solution.
+This kind of knowledge is really valuable from enterprise perspective. However, each database
+system has different requirements so it is impossible to prepare one common solution. 
  
 %------------------------------------------------------------------------- 
 \Section{Background}
 
-Database is organised collection of data. It can be discriminated two types, 
-Relation Databases and Object Oriented Databases.
+Database is organised collection of data. It can be categorised into two types: 
+Relational databases and Object Oriented Databases.
 
-Relation database consists of specific number of tables and each has a distinguish column named primary key. 
-They are matured, well documented, tested and commonly used. Several examples of then are: MySQL, Oracle, MS SQL, PostgreSQL. 
+Relational database consists of specific number of tables and each has a distinguish column named primary key. 
+They are well-documented, tested and commonly used. Several examples of then are MySQL, Oracle, MS SQL, PostgreSQL. 
 % TODO
 % ROZWINAC - OPISAC CZYM SIE ROZNIA, ZALOZENIA COSTAM COSTAM 
 
-Object oriented database was developed in response to expansion of object oriented programming. In addition to ensure high scalability and  
+Object oriented database was developed in response to expansion of object oriented programming, in addition to ensure high scalability and  
 performance in current information systems.
 
-The architecture of database system has a big influence of performance. Single machine has a limited
-resources, so this is a reason why enterprise systems  are composed of a lot of them.
+The architecture of database system has a big influence on performance. Single machine has limited
+resources, so this is the reason why enterprise systems are composed of multiple boxes named grids.
 
 %------------------------------------------------------------------------- 
 \Section{Research Questions}
@@ -77,17 +83,14 @@ resources, so this is a reason why enterprise systems  are composed of a lot of 
 During the Systematic Research Review following questions will be posed: 
 
 \begin{itemize}
-  \item What are all available NoSQL databases
-  % \item co do tej pory zostalo zreserczerowane na ten temat
-  % to summarize existing \ldots 
-  \item How advanced research on large scale and high performace NoSQL databases are 
+  \item What NoSQL databases are described in the publications
+  \item What is known about high performance and large scale NoSQL databases   
 \end{itemize}
 
-% tutaj outcomes - co jest wynikiem researchu - spodziewane
-% TODO
-% // sprawd?cie czy to zdanie ma jaki? sens
-The outcomes of the research would be knowledge what has been written in topic of our interest.
-
+% tutaj outcomes - co jest spdziewanym wynikiem researchu - spodziewane
+% TODO 
+The expected outcome of the research is a collection of publications concerned with the topic of our intereset.
+ 
 \Section{Research method}
 
 The method we have chosen for our research is Systematic Literature Review defined by Kitchenham. For detailed information, please see \cite{kitchenham}. 
@@ -121,9 +124,13 @@ Studies were eligible for inclusion in the review if the topic was about NoSQL d
 The second criteria was if the studies are releated with high performance or high scale for either SQL or NoSQL databases. Only studies written in English were included.
 We also included papers which covers comparision of available NoSQL databases.
 
-Studies were excluded if they main focus was on SQL databases without considering high performance or large scale problems. In addition if research focused on complicated databases system
-with huge complexity (those which follows third normal form or higher) it was also excluded. Furthermore, our reseach topis is highly related with industry, so we excluded all papers 
-which does not have any usage in industry.
+Studies were excluded if they main focus was on SQL databases without considering high performance or large scale problems. 
+
+% to była uwaga: na jakiej podstawie chcemy określać czy system jest complicated?
+%In addition if research focused on complicated databases system
+%with huge complexity (those which follows third normal form or higher) it was also excluded. 
+
+Furthermore, our reseach topis is highly related with industry, so we excluded all papers which does not have any usage in industry.
 
 \SubSection{Data sources and search strategy}  
 
@@ -165,14 +172,42 @@ In ACM digital library we discovered 70 related results, 41 articles were found 
 Summing up 159 materials were investigated. 
 
 Based on exclusion criteria some of references were rejected. A lot of examinated works were too basic or were focues only on SQL databases.
-Finally we received 16 scientific artices, 1 book, 1 Master Thesis and 1 website which will be described in next section. 
+% TODO
+% bardziej rozwinąć na jakiej podstawie wywalaliśmy
+% proces iteracyjny 
+
+%Finally we received 16 scientific artices, 1 book, 1 Master Thesis and 1 website which will be described in next section. 
+Finally we received 4 scientific artices, 1 book, 1 Master Thesis and 1 website which will be described in next section.
 
 %------------------------------------------------------------------------ 
+ 
+\Section{Analysis}    
 
-\Section{Analisis}   
+\cite{strauch} w pierwszych rozdziałach swojej pracy opisuje początki powstania baz NoSQL oraz ludzki którzy
+przyczynili się do ich rozwoju. Duży postęp nastąpił podczas rozwoju tzn. Web 2.0 (portale społecznościowe Facebook), serwisy
+internetowe (Amazon, eBay) potrzebowały szybkich rozwiązań mogących przetwarzać dużo danych.
+
+Autor opisuje zalety baz NoSQL. Należą do ich min. Avoidance of Unneeded Complexity, High Throughput,
+Horizontal Scalability and Running on Commodity Hardware (Machines can be added and removed without causing the same operational efforts to perform sharding in RDBMS cluster-solutions;),
+Movements in Programming Languages and Development Frameworks, High Availability.
+
+Równocześnie autor podkreśla że są także minusy baz NoSQL. Większość z dostępnych baz to otwarte oprogramowanie, biznesowi 
+ludzie mogą mieć pewne obawy gdy coś nie bedzie działać (nie ma kogo obwiniać). 
+NoSQL to nic nowego, wcześniej były juz próby stworzenia obiektowej bazy danych.
+
+Autor prezentuje w dziale Performance vs. Scalability obszerne porównianie między bazami SQL i NoSQL.  
+
+W daleszej części artykułu dokonuje klasyfikacji najpopularniejszych daz NoSQL według 
+dwóch kategori Document Databases (Apache CouchDB, MongoDB) i Column-Orinted Databases (Google’s Bigtable, Cassandra). 
+
+
+\cite{tudorica}
+
+
 
 % TODO pl na podstawie protokolu, tych prac ktore wybralismy, czytami i dokonujemy analizy ich.
 % analiza to badanie kazdej pracy.
+
 
 Good starting point describing NoSQL databases in general, can be found in \cite{survey}, \cite{strauch}, \cite{leavittm} and \cite{prasad}. Interesting 
 comparison of NoSQL and SQL databases was promised in article \cite{cattell}. Although a lot of references points to some popular NoSQL database currently 
@@ -192,6 +227,13 @@ complexity \cite{rizzotti}.
 In analysed articles only most popular NoSQL databases were described, e.g HBase, MongoDB, Cassandra, SimpleDB.
 Invesitaged works contains valuable information concerning high performance and scalability. 
 
+
+
+%Directory of NoSQL databases with basic information on the individual datastores:
+%http://nosql-database.org/
+
+
+
 %------------------------------------------------------------------------- 
 \Section{Conclusion} 
 
@@ -199,12 +241,22 @@ Invesitaged works contains valuable information concerning high performance and 
 % nie zostala jeszcze dobrze zliteralizowana i sie fajnie
 
 % Luką jest brak konkretnych przykładów użycia nosql baz danych w aplikacjach webowych 
+Systematic literature review helped us to get to know what are available NoSQL databases,
+% TODO refactor 
+%and how advanced research on large scale and high performace NoSQL databases are.  
 
-During systematic literature review we encounter some gap.
-There is really no specific document which would describe real world scenario like database for web 
+Although there are some solutions describing high performance and scalable NoSQL databases, but there  
+is really no specific document which would describe real world scenario like database (type, configuration) for web 
 application able to handle 1 milion of users.
+% TODO bardziej rozwinąć zdanie powyżej, bo nagle 
 
-%------------------------------------------------------------------------- 
+That is a luck in knowledge, which could be fulfilled in further research.
+
+%-------------------------------------------------------------------------
+% TODO split bibliography 
+
+\renewcommand{\refname}{Article references}
+
 \begin{thebibliography}{9}
 
 	\bibitem{kitchenham} 
@@ -213,14 +265,24 @@ application able to handle 1 milion of users.
 	  Keele University and University of Durham,
 	  EBSE Technical Report,
 	  2007.
-  
-      \bibitem{strauch}
+
+	\setcounter{firstbib}{\value{enumiv}}
+
+\end{thebibliography}
+
+\renewcommand{\refname}{Systematic research review references} 
+
+\begin{thebibliography}{9}  
+
+\setcounter{enumiv}{\value{firstbib}}
+
+ \bibitem{strauch}
   	  Christof Strauch, 
       \emph{NoSQL Databases}. Stuttgart Media University.
       
-      \bibitem{datastax}
-  	  Datastax Corporation, 
-      \emph{Benchmarking Top NoSQL Databases}. February 2013.
+      %\bibitem{datastax}
+  	  %Datastax Corporation, 
+      %\emph{Benchmarking Top NoSQL Databases}. February 2013.
       
       \bibitem{survey}
   	  Jing Han, Haihong E, Guan Le,
@@ -238,9 +300,9 @@ application able to handle 1 milion of users.
   	  Rick Cattell, 
       \emph{Scalable SQL and NoSQL Data Stores}. Cattell.Net Software.
       
-      \bibitem{xiang}
-  	  Peng Xiang, Ruichun Hou and Zhiming Zhou, 
-      \emph{Cache and Consistency in NOSQL}. Information Engineering Center, Ocean University of China.
+      %\bibitem{xiang}
+  	  %Peng Xiang, Ruichun Hou and Zhiming Zhou, 
+      %\emph{Cache and Consistency in NOSQL}. Information Engineering Center, Ocean University of China.
       
       \bibitem{leavittm}
   	  Neal Leavittm 
@@ -285,8 +347,8 @@ application able to handle 1 milion of users.
       \bibitem{hecht}
   	  Robin Hecht, Stefan Jablonski,
       \emph{NoSQL Evaluation - A Use Case Oriented Survey}. Patra Berhampur University India.
-      
-      \bibitem{sakr}
+       
+      \bibitem{sakr} 
   	  Sherif Sakr, 
       \emph{Supply cloud-level data scalability with NoSQL databases}. National ICT Australia.
       
@@ -297,12 +359,9 @@ application able to handle 1 milion of users.
       %\bibitem{nosql-benchmarking}
       %\emph{NoSQL Benchmarking} available at
       %\url{http://www.cubrid.org/blog/dev-platform/nosql-benchmarking/}
-      
-\end{thebibliography}
 
-%------------------------------------------------------------------------- 
-\nocite{ex1,ex2}
-\bibliographystyle{latex8} 
+\end{thebibliography}
+ 
 
 %HARMONOGRAM
 %Radek: Reseach Method : poniedziałek 8 rano
