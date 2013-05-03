@@ -1,0 +1,175 @@
+\documentclass[times, 10pt,twocolumn]{article} 
+\usepackage{latex8}    
+\usepackage{times}
+\usepackage{url}  
+\usepackage{listings}
+\newcounter{firstbib}
+ 
+\pagestyle{empty}
+
+\begin{document} 
+
+\title{ Large Scale and High Performance NoSQL Databases in Web Applications}
+\author{Mateusz Bilski, 181117@student.pwr.wroc.pl \\ Ireneusz Kawalec, 180528@student.pwr.wroc.pl \\ 
+Wroclaw University of Technology\\ Faculty of Electronics \\ Computer Science \\ Internet Engineering  \\  
+} 
+
+\maketitle
+\thispagestyle{empty} 
+
+\begin{abstract}  
+
+The aim of this document is to present comparision between available NoSQL databases and architecture which
+provides high performance for large scale web applications.
+
+Most known 10 NoSQL databases has been investigated and compared with each other. We have analyzed the advantages 
+and disadvantages of using NoSQL databases in compare with SQL databases. 
+
+We choosed the best NoSQL database and built a system which provide fast response time on reading and writing operation
+under heavy load when contains huge size of data.
+
+As the outcome of this paper we described the architecture, configuration and presented results of tests.
+
+\end{abstract} 
+
+keywords: database, NoSQL, large scale, high performance, web application
+
+%------------------------------------------------------------------------- 
+\Section{Introduction}
+
+Databases are used almost in all aspects of software engineering. Each 
+information system needs a place to storage a data. However, due to the complexity of the systems 
+the key role is to provide the proper solution.
+
+Modern web applications should handle a huge load and maintain high performance and
+availability. Good examples of such services are Facebook, Amazon, eBay and Google Mail.
+
+Relational databases occur to be inefficient in this case. Strong complexity and
+heave coupling causes low performance. The solution for that issues are Object Oriented
+Databases which ensure high scalability.
+
+Our aim is to compare available NoSQL databases and to select the best one by evaluating 
+optimal architecture that will fulfill requirements. 
+
+The first step to achieve this target is to investigate systematic literature review in this area.
+It can be done by finding answers to research questions.
+
+This kind of knowledge is really valuable from enterprise perspective. However, each database
+system has different requirements so it is impossible to prepare one common solution. 
+
+%------------------------------------------------------------------------- 
+\Section{Research Questions}
+
+During the Systematic Research Review following questions will be posed: 
+
+\begin{itemize}
+  \item What NoSQL databases are described in the publications
+  \item What is known about high performance and large scale NoSQL databases   
+\end{itemize}
+
+The expected outcome of the research is a collection of publications concerned with the topic of our intereset.
+ 
+\Section{Research method}
+
+\Section{Analysis}    
+
+\Section{Synthesize}   
+
+\Section{Conclusion} 
+
+\renewcommand{\refname}{Article references}
+
+\begin{thebibliography}{9}
+
+	\bibitem{kitchenham} 
+	  B.A. Kitchenham,
+	  \emph{Guidelines for performing Systematic Literature Reviews in Software Engineering Version 2.3}.
+	  Keele University and University of Durham,
+	  EBSE Technical Report,
+	  2007.
+
+	\setcounter{firstbib}{\value{enumiv}}
+
+\end{thebibliography}
+
+\renewcommand{\refname}{Systematic research review references} 
+
+\begin{thebibliography}{9}  
+
+\setcounter{enumiv}{\value{firstbib}}
+
+ \bibitem{strauch}
+  	  Christof Strauch, 
+      \emph{NoSQL Databases}. Stuttgart Media University.
+      
+      \bibitem{survey}
+  	  Jing Han, Haihong E, Guan Le,
+      \emph{Survey on NoSQL Database}. Beijing University of Posts and Telecommunications.
+      
+      \bibitem{strauch2}
+  	  Christof Strauch, 
+      \emph{NoSQL Databases: a step to database scalability in Web environment}. Stuttgart Media University.
+      
+      \bibitem{pokorny}
+  	   Jaroslav Pokorny, 
+      \emph{NoSQL Databases}. Charles University.
+      
+      \bibitem{cattell}
+  	  Rick Cattell, 
+      \emph{Scalable SQL and NoSQL Data Stores}. Cattell.Net Software.
+      
+      \bibitem{leavittm}
+  	  Neal Leavittm 
+      \emph{Will NoSQL Databases Live Up to Their Promise}. Technology News.
+      
+      \bibitem{delis}
+  	  Alexios Delis, Nick Roussopoulos, 
+      \emph{Performance and Scalability of Client-Server Database Architectures}. University of Maryland.
+      
+      \bibitem{tudorica}
+  	  Bogdan George Tudorica, Cristian Bucur, 
+      \emph{A comparison between several NoSQL databases with comments and notes}. Petroleum-Gas University of Ploiesti, Ploiesti, Romania.
+      
+      \bibitem{taniar}
+  	  David Taniar, 
+      \emph{High Performance Database Processing}. Clayton School of Information Technology, Clayton, Victoria, Australia.
+      
+      \bibitem{konstantinou}
+  	  Ioannis Konstantinou, Evangelos Angelou, Christina Boumpouka, Dimitrios Tsoumakos, Nectarios Koziris, 
+      \emph{On the Elasticity of NoSQL Databases over Cloud Management Platforms}. National Technical University of Athens, Greece.
+      
+      \bibitem{chakrabarti}
+  	  Aniket Chakrabarti, Christopher Stewart,
+      \emph{Efficent Latency Management in NoSQL Stores}. The Ohio State University.
+      
+      \bibitem{rizzotti}
+  	  Nicolas Ruﬂin, Helmar Burkhart, Sven Rizzotti, 
+      \emph{Social-Data Storage-Systems}.  University of Basel, Switzerland.
+      
+      \bibitem{tiwari}
+  	  Shashank Tiwari, 
+      \emph{Professional NoSQL}. Indianapolis, Ind. : John Wiley \& Sons, 2011.
+      
+      \bibitem{orend}
+  	  Kai Orend, 
+      \emph{Analysis and Classification of NoSQL Databases and Evaluation of their Ability to Replace an Object-relational Persistence Layer}. Master's Thesis. Technische Universitat Munchen.
+      
+      \bibitem{prasad}
+  	  Rabi Prasad, 
+      \emph{RDBMS to NoSQL: Reviewing Some Next-Generation Non-Relational Database's}. Stuttgart Media University.
+      
+      \bibitem{hecht}
+  	  Robin Hecht, Stefan Jablonski,
+      \emph{NoSQL Evaluation - A Use Case Oriented Survey}. Patra Berhampur University India.
+       
+      \bibitem{sakr} 
+  	  Sherif Sakr, 
+      \emph{Supply cloud-level data scalability with NoSQL databases}. National ICT Australia.
+      
+      \bibitem{nosql-database}
+      \emph{The biggest list of nosql databases} available at
+      \url{http://nosql-database.org/}
+
+\end{thebibliography}
+
+\end{document}
