@@ -10,7 +10,7 @@
 \begin{document} 
 
 \title{ Large Scale and High Performance NoSQL Databases in Web Applications}
-\author{Mateusz Bilski, 181117@student.pwr.wroc.pl \\ Ireneusz Kawalec, 180528@student.pwr.wroc.pl \\ 
+\author{Mateusz Bilski, mateusz.bilski@gmail.com \\ Ireneusz Kawalec, 180528@student.pwr.wroc.pl \\ \\
 Wroclaw University of Technology\\ Faculty of Electronics \\ Computer Science \\ Internet Engineering  \\  
 } 
 
@@ -51,23 +51,39 @@ Databases which ensure high scalability.
 Our aim is to compare available NoSQL databases and to select the best one by evaluating 
 optimal architecture that will fulfill requirements. 
 
-The first step to achieve this target is to investigate systematic literature review in this area.
-It can be done by finding answers to research questions.
+Database is organized collection of data. It can be discriminated two types, 
+Relation Databases and Object Oriented Databases.
 
-This kind of knowledge is really valuable from enterprise perspective. However, each database
-system has different requirements so it is impossible to prepare one common solution. 
+Relation database consists of specific number of tables and each has a distinguish column named primary key. 
+They are matured, well documented, tested and commonly used. Several examples of then are: MySQL, Oracle, MS SQL, PostgreSQL. 
+
+Object oriented database was developed in response to expansion of object oriented programming. In addition to ensure high scalability and  
+performance in current information systems.
+
+The architecture of database system has a big influence of performance. Single machine has a limited
+resources, so this is a reason why enterprise systems  are composed of a lot of them.
 
 %------------------------------------------------------------------------- 
 \Section{Research Questions}
 
-During the Systematic Research Review following questions will be posed: 
+In our paper we want to give answers to the following questions:
 
 \begin{itemize}
-  \item What NoSQL databases are described in the publications
-  \item What is known about high performance and large scale NoSQL databases   
+  \item What are all available NoSQL databases
+  \item What are the differences between building database system based on relation and object model
+  \item Which NoSQL database is the best for large scale, high performance database systems
+  \item How configure database to gain maximum efficency
+  \item How to carry out database performance testing
 \end{itemize}
 
-The expected outcome of the research is a collection of publications concerned with the topic of our intereset.
+The expected outcomes of the research are:
+
+\begin{itemize}
+  \item comparision of most known NoSQL databases
+  \item comparision beetween NoSQL and SQL databases
+  \item architecture and configuration of chosen NoSQL database which provides high performance on large scale database systems
+  \item tests results
+\end{itemize}
  
 \Section{Research method}
 
@@ -76,23 +92,6 @@ The expected outcome of the research is a collection of publications concerned w
 \Section{Synthesize}   
 
 \Section{Conclusion} 
-
-\renewcommand{\refname}{Article references}
-
-\begin{thebibliography}{9}
-
-	\bibitem{kitchenham} 
-	  B.A. Kitchenham,
-	  \emph{Guidelines for performing Systematic Literature Reviews in Software Engineering Version 2.3}.
-	  Keele University and University of Durham,
-	  EBSE Technical Report,
-	  2007.
-
-	\setcounter{firstbib}{\value{enumiv}}
-
-\end{thebibliography}
-
-\renewcommand{\refname}{Systematic research review references} 
 
 \begin{thebibliography}{9}  
 
