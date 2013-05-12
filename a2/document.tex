@@ -10,7 +10,7 @@
 \begin{document} 
 
 \title{Large Scale and High Performance NoSQL Databases in Web Applications \\ Project Proposal}
-\author{Mateusz Bilski, mateusz.bilski@gmail.com \\ Ireneusz Kawalec, 180528@student.pwr.wroc.pl \\ \\
+\author{Mateusz Bilski, mateusz.bilski@gmail.com \\ Ireneusz Kawalec, ireneusz.kawalec@gmail.com \\ \\
 Wroclaw University of Technology\\ Faculty of Electronics \\ Computer Science \\ Internet Engineering  \\  
 } 
 
@@ -21,10 +21,10 @@ Wroclaw University of Technology\\ Faculty of Electronics \\ Computer Science \\
 
 The purpose of this document is to present project proposal of Large Scale and High Performance NoSQL Databases in Web Applications. 
 
-In our project we are going to present comparision between available NoSQL databases and architecture which
+In our project we are going to present comparison between available NoSQL databases and architecture which
 provides high performance for large scale web applications.
 
-The outcome of this paper are aims and objectives, research question and expected outcomes, choosed methods which will be used in the reseach
+The outcome of this paper are aims and objectives, research question and expected outcomes, choosed methods which will be used in the research
 and presentation of project plan. 
 
 \end{abstract} 
@@ -35,11 +35,11 @@ keywords: database, NoSQL, large scale, high performance, web application, propo
 \Section{Introduction}
 
 Databases are used almost in all aspects of software engineering. Each 
-information system needs a place to storage a data. However, due to the large scale of the systems 
-the key role is to provide the proper solution.
+information system needs a place to storage a data. Furthermore databases are essential for internet services.
 
 Modern web applications should be able to handle a huge load and provide high performance. 
-Good examples of such services are Facebook, Amazon, eBay and Google Mail.
+Good examples of such services are Facebook, Amazon, eBay and Google Mail. Most of them use NoSQL databases
+instead of SQL to achieve better performance.
 
 A NoSQL database provides a mechanism for storage and retrieval of data that use looser consistency models 
 than traditional relational databases in order to achieve horizontal scaling and higher availability. Some authors 
@@ -50,7 +50,7 @@ resources, so this is a reason why enterprise systems are composed of a lot of t
 
 We have done a Systematic Literature Review for this topic. There are some studies describing high performance 
 and scalable NoSQL databases, but there is really no specific document which would describe real world scenario like 
-database (type, configuration) for web application able to handle milions of users. This is a gap we want to fulfill.
+database (type, configuration) for web application able to handle millions of users. This is a gap we want to fulfill.
 
 %------------------------------------------------------------------------- 
 \Section{Aims and Objectives}
@@ -74,9 +74,9 @@ Objectives
 The expected outcomes of the research are:
 
 \begin{itemize}
-  \item comparision of most used NoSQL databases
+  \item comparison of most used NoSQL databases
   \item architecture and configuration of NoSQL databases which provides high performance on large scale database systems
-  \item tests results
+  \item tests results of measuring reading/writing response time of each NoSQL databases on prepared architecture and configuration.
 \end{itemize}
 
 \Section{Research Questions}
@@ -84,14 +84,14 @@ The expected outcomes of the research are:
 In our paper we want to give answers to the following questions:
 
 \begin{itemize}
-  \item Which NoSQL database is the best for large scale, high performance database systems
-  \item How configure database to gain maximum efficency
-  \item How to carry out database performance testing
+  \item Which NoSQL database is the best for large scale, high performance database systems?
+  \item How configure database to gain maximum efficiency?
+  \item How to carry out database performance testing?
 \end{itemize}
  
 \Section{Methods}
 
-For the first step of our research: comparision of NoSQL databases, we decided to use Action Research method.
+For the first step of our research: comparison of NoSQL databases, we decided to use Action Research method.
 We are going to choose most known databases using rankings available on the internet and then by investigating
 documentation learn more about them and find out how to configure a system to be the most efficient.
 
@@ -111,77 +111,17 @@ system for each database.
 \begin{thebibliography}{9}  
 
 \setcounter{enumiv}{\value{firstbib}}
-
- \bibitem{strauch}
-  	  Christof Strauch, 
-      \emph{NoSQL Databases}. Stuttgart Media University.
       
-      \bibitem{survey}
-  	  Jing Han, Haihong E, Guan Le,
-      \emph{Survey on NoSQL Database}. Beijing University of Posts and Telecommunications.
+      \bibitem{research_methods} 
+      Ludwik Kuzniarz
+      \emph{Writing Project Proposal}. Blekinge Institute of Technology
       
-      \bibitem{strauch2}
-  	  Christof Strauch, 
-      \emph{NoSQL Databases: a step to database scalability in Web environment}. Stuttgart Media University.
-      
-      \bibitem{pokorny}
-  	   Jaroslav Pokorny, 
-      \emph{NoSQL Databases}. Charles University.
-      
-      \bibitem{cattell}
-  	  Rick Cattell, 
-      \emph{Scalable SQL and NoSQL Data Stores}. Cattell.Net Software.
-      
-      \bibitem{leavittm}
-  	  Neal Leavittm 
-      \emph{Will NoSQL Databases Live Up to Their Promise}. Technology News.
-      
-      \bibitem{delis}
-  	  Alexios Delis, Nick Roussopoulos, 
-      \emph{Performance and Scalability of Client-Server Database Architectures}. University of Maryland.
-      
-      \bibitem{tudorica}
-  	  Bogdan George Tudorica, Cristian Bucur, 
-      \emph{A comparison between several NoSQL databases with comments and notes}. Petroleum-Gas University of Ploiesti, Ploiesti, Romania.
-      
-      \bibitem{taniar}
-  	  David Taniar, 
-      \emph{High Performance Database Processing}. Clayton School of Information Technology, Clayton, Victoria, Australia.
-      
-      \bibitem{konstantinou}
-  	  Ioannis Konstantinou, Evangelos Angelou, Christina Boumpouka, Dimitrios Tsoumakos, Nectarios Koziris, 
-      \emph{On the Elasticity of NoSQL Databases over Cloud Management Platforms}. National Technical University of Athens, Greece.
-      
-      \bibitem{chakrabarti}
-  	  Aniket Chakrabarti, Christopher Stewart,
-      \emph{Efficent Latency Management in NoSQL Stores}. The Ohio State University.
-      
-      \bibitem{rizzotti}
-  	  Nicolas Ruﬂin, Helmar Burkhart, Sven Rizzotti, 
-      \emph{Social-Data Storage-Systems}.  University of Basel, Switzerland.
-      
-      \bibitem{tiwari}
-  	  Shashank Tiwari, 
-      \emph{Professional NoSQL}. Indianapolis, Ind. : John Wiley \& Sons, 2011.
-      
-      \bibitem{orend}
-  	  Kai Orend, 
-      \emph{Analysis and Classification of NoSQL Databases and Evaluation of their Ability to Replace an Object-relational Persistence Layer}. Master's Thesis. Technische Universitat Munchen.
-      
-      \bibitem{prasad}
-  	  Rabi Prasad, 
-      \emph{RDBMS to NoSQL: Reviewing Some Next-Generation Non-Relational Database's}. Stuttgart Media University.
-      
-      \bibitem{hecht}
-  	  Robin Hecht, Stefan Jablonski,
-      \emph{NoSQL Evaluation - A Use Case Oriented Survey}. Patra Berhampur University India.
-       
-      \bibitem{sakr} 
-  	  Sherif Sakr, 
-      \emph{Supply cloud-level data scalability with NoSQL databases}. National ICT Australia.
+      \bibitem{slr} 
+      Mateusz Bilski, Ireneusz Kawalec
+      \emph{Systematic Literature Review of Large Scale and High Performance NoSQL Databases in Web Applications}. Wroclaw University of Technology
       
       \bibitem{nosql-database}
-      \emph{The biggest list of nosql databases} available at
+      \emph{List of NoSQL Databases} \\
       \url{http://nosql-database.org/}
 
 \end{thebibliography}
