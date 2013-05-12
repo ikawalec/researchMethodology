@@ -9,7 +9,7 @@
 
 \begin{document} 
 
-\title{ Large Scale and High Performance NoSQL Databases in Web Applications}
+\title{Large Scale and High Performance NoSQL Databases in Web Applications \\ Project Proposal}
 \author{Mateusz Bilski, mateusz.bilski@gmail.com \\ Ireneusz Kawalec, 180528@student.pwr.wroc.pl \\ \\
 Wroclaw University of Technology\\ Faculty of Electronics \\ Computer Science \\ Internet Engineering  \\  
 } 
@@ -19,79 +19,94 @@ Wroclaw University of Technology\\ Faculty of Electronics \\ Computer Science \\
 
 \begin{abstract}  
 
-The aim of this document is to present comparision between available NoSQL databases and architecture which
+The purpose of this document is to present project proposal of Large Scale and High Performance NoSQL Databases in Web Applications. 
+
+In our project we are going to present comparision between available NoSQL databases and architecture which
 provides high performance for large scale web applications.
 
-Most known 10 NoSQL databases has been investigated and compared with each other. We have analyzed the advantages 
-and disadvantages of using NoSQL databases in compare with SQL databases. 
-
-We choosed the best NoSQL database and built a system which provide fast response time on reading and writing operation
-under heavy load when contains huge size of data.
-
-As the outcome of this paper we described the architecture, configuration and presented results of tests.
+The outcome of this paper are aims and objectives, research question and expected outcomes, choosed methods which will be used in the reseach
+and presentation of project plan. 
 
 \end{abstract} 
 
-keywords: database, NoSQL, large scale, high performance, web application
+keywords: database, NoSQL, large scale, high performance, web application, proposal
 
 %------------------------------------------------------------------------- 
 \Section{Introduction}
 
 Databases are used almost in all aspects of software engineering. Each 
-information system needs a place to storage a data. However, due to the complexity of the systems 
+information system needs a place to storage a data. However, due to the large scale of the systems 
 the key role is to provide the proper solution.
 
-Modern web applications should handle a huge load and maintain high performance and
-availability. Good examples of such services are Facebook, Amazon, eBay and Google Mail.
+Modern web applications should be able to handle a huge load and provide high performance. 
+Good examples of such services are Facebook, Amazon, eBay and Google Mail.
 
-Relational databases occur to be inefficient in this case. Strong complexity and
-heave coupling causes low performance. The solution for that issues are Object Oriented
-Databases which ensure high scalability.
-
-Our aim is to compare available NoSQL databases and to select the best one by evaluating 
-optimal architecture that will fulfill requirements. 
-
-Database is organized collection of data. It can be discriminated two types, 
-Relation Databases and Object Oriented Databases.
-
-Relation database consists of specific number of tables and each has a distinguish column named primary key. 
-They are matured, well documented, tested and commonly used. Several examples of then are: MySQL, Oracle, MS SQL, PostgreSQL. 
-
-Object oriented database was developed in response to expansion of object oriented programming. In addition to ensure high scalability and  
-performance in current information systems.
+A NoSQL database provides a mechanism for storage and retrieval of data that use looser consistency models 
+than traditional relational databases in order to achieve horizontal scaling and higher availability. Some authors 
+refer to them as "Not only SQL" to emphasize that some NoSQL systems do allow SQL-like query language to be used.
 
 The architecture of database system has a big influence of performance. Single machine has a limited
-resources, so this is a reason why enterprise systems  are composed of a lot of them.
+resources, so this is a reason why enterprise systems are composed of a lot of them.
+
+We have done a Systematic Literature Review for this topic. There are some studies describing high performance 
+and scalable NoSQL databases, but there is really no specific document which would describe real world scenario like 
+database (type, configuration) for web application able to handle milions of users. This is a gap we want to fulfill.
 
 %------------------------------------------------------------------------- 
+\Section{Aims and Objectives}
+
+Aims
+\begin{itemize}
+	\item to evaluate performance of NoSQL databases for large scale web applications.
+\end{itemize}
+
+Objectives
+\begin{itemize}
+	\item to compare most used NoSQL databases
+	\item to design architecture of system for high performance and large scale web application using NoSQL databases
+	\item to develop an optimal configuration for prepared architecture for each database
+	\item to measure reading and writing response time of the system for each database
+\end{itemize}
+
+
+\Section{Expected Outcomes}
+
+The expected outcomes of the research are:
+
+\begin{itemize}
+  \item comparision of most used NoSQL databases
+  \item architecture and configuration of NoSQL databases which provides high performance on large scale database systems
+  \item tests results
+\end{itemize}
+
 \Section{Research Questions}
 
 In our paper we want to give answers to the following questions:
 
 \begin{itemize}
-  \item What are all available NoSQL databases
-  \item What are the differences between building database system based on relation and object model
   \item Which NoSQL database is the best for large scale, high performance database systems
   \item How configure database to gain maximum efficency
   \item How to carry out database performance testing
 \end{itemize}
-
-The expected outcomes of the research are:
-
-\begin{itemize}
-  \item comparision of most known NoSQL databases
-  \item comparision beetween NoSQL and SQL databases
-  \item architecture and configuration of chosen NoSQL database which provides high performance on large scale database systems
-  \item tests results
-\end{itemize}
  
-\Section{Research method}
+\Section{Methods}
 
-\Section{Analysis}    
+For the first step of our research: comparision of NoSQL databases, we decided to use Action Research method.
+We are going to choose most known databases using rankings available on the internet and then by investigating
+documentation learn more about them and find out how to configure a system to be the most efficient.
 
-\Section{Synthesize}   
+To tests the databases we are going to conduct an experiment. We want to measure response time of the large scale
+system for each database.
 
-\Section{Conclusion} 
+\Section{Project Plan}
+
+\begin{enumerate}
+  \item Choose the five most known NoSQL databases
+  \item Compare databases with each other
+  \item Design an architecture of the system
+  \item Find out the configuration for each database to be the most efficient on such architecture
+  \item Measure response times of each database
+\end{enumerate}
 
 \begin{thebibliography}{9}  
 
