@@ -8,11 +8,11 @@
  
 \pagestyle{empty}
 
-\begin{document} 
+\begin{document}  
 
 \title{ Systematic Literature Review
        of Large Scale and High Performance NoSQL Databases in Web Applications}
-\author{Mateusz Bilski, 181117@student.pwr.wroc.pl \\ Ireneusz Kawalec, 180528@student.pwr.wroc.pl \\ 
+\author{Mateusz Bilski, mateusz.bilski@gmail.com \\ Ireneusz Kawalec, ireneusz.kawalec@gmail.com \\ 
 Wroclaw University of Technology\\ Faculty of Electronics \\ Computer Science \\ Internet Engineering  \\  
 }
 
@@ -80,7 +80,7 @@ resources, so this is the reason why enterprise systems are composed of multiple
 %------------------------------------------------------------------------- 
 \Section{Research Questions}
 
-During the Systematic Research Review following questions will be posed: 
+During the Systematic Literature Review following questions will be posed: 
 
 \begin{itemize}
   \item What NoSQL databases are described in the publications
@@ -100,29 +100,29 @@ The method we have chosen for our research is Systematic Literature Review defin
 research question, or topic area, or phenomenon of interest.} \cite[p.~3]{kitchenham}
 ~\\
 ~\\
-Systematic Literature Review it is a search of all available studies and scientific articles in the field to see what was written on The Topic. 
-This is done before research work, because it is important not to investigate something that is already well explored by someone. To achieve this 
-we have to be very honest and rigorous for ourselves and our review. The bases of SLR are creating a protocol and well documenting it. One of 
-purpose of documenting it is to enable for someone from the outside to asses the quality of our work. 
+Systematic Literature Review is a search of all available studies and scientific articles in the field to see what was written on the topic. 
+It is done before research work, because it is crucial not to investigate something that is already well explored by someone. To achieve this 
+we have to be very honest and rigorous for ourselves and our review. The base of SLR is to create a protocol and present documention. One of 
+the purpose of documenting it is to enable to asses the quality of our work. 
 
-We can split it to 3 stage: planing, conducting and reporting. In planing stage we define our needs, our questions, create and evaluate 
-protocol. Next in conducting phase we execute our protocol and estimate quality of results, extract data out of it and synthesise this 
-data. The last stage - reporting review consists of: defining how we would distibute effects of our work, compose general report from whole 
-SLR and rating it. As can be seen in every stage there is a quality assessment of particular works - the aim is to determine the quality level of final outcomes.
+We can divide reseach process into 3 stages: planing, conducting and reporting. Firstly we define our needs, then questions, next create and evaluate 
+the protocol. In the conducting phase we execute our protocol, estimate the quality of results, extract data out and finally synthesise this 
+data. The last stage, reporting review consists of defining how we would distibute effects of our work, composing general report from whole 
+SLR and rating it. As can be seen in every stage there is a quality assessment of particular works. The aim is to determine the quality level of final outcomes.
 ~\\
-It is worth to mention that to achieve better effects we should made iterations of individual step or groups of steps. During these iterations, protocol that is used could be impoved.
+It is worth to mention that to achieve better effects we should made iterations of individual step or group of steps. During these iterations the protocol should be impoved.
 
 %------------------------------------------------------------------------- 
 \Section{Protocol}
 
-We developed a protocol for the systematic review by following the guidelines enclosed in [1]. This protocol specified the research questions, search
+We developed a protocol for the systematic review by following the guidelines enclosed in [1]. The protocol specified the research questions, search
 strategy, inclusion, exclusion and quality criteria, data extraction, and methods of synthesis.
 
 \SubSection{Inclusion and exclusion criteria}
 
-Studies were eligible for inclusion in the review if the topic was about NoSQL databases. We decided that we need to find as many information regarding this topic as possible.
-The second criteria was if the studies are releated with high performance or high scale for either SQL or NoSQL databases. Only studies written in English were included.
-We also included papers which covers comparision of available NoSQL databases.
+Studies were eligible for inclusion in the review if the topic was about NoSQL databases. We decided that we needed to find as many information regarding this topic as possible.
+The second criteria was if the studies are related to high performance or high scale for either SQL or NoSQL databases. Only studies written in English were included.
+We also included papers which cover comparision of available NoSQL databases.
 
 Studies were excluded if they main focus was on SQL databases without considering high performance or large scale problems. 
 
@@ -130,11 +130,11 @@ Studies were excluded if they main focus was on SQL databases without considerin
 %In addition if research focused on complicated databases system
 %with huge complexity (those which follows third normal form or higher) it was also excluded. 
 
-Furthermore, our reseach topis is highly related with industry, so we excluded all papers which does not have any usage in industry.
+Furthermore, our research topic is highly related to industry, thus we excluded all papers which does not have any usage in industry.
 
 \SubSection{Data sources and search strategy}  
 
-For search strategy it was choose to search digital libraries like:
+For the search strategy following digital libraries were examined:
 \begin{itemize}
 	\item ACM
 	\item IEEEXplore
@@ -145,7 +145,7 @@ For search strategy it was choose to search digital libraries like:
 
 Moreover, Google was used to expand result of systematic research review.
 
-Data sources were searched using following phrases:
+The following phrases were used to research data sources:
 \begin{enumerate}
     \item NoSQL database 
 	\item NoSQL and SQL
@@ -162,16 +162,18 @@ Data sources were searched using following phrases:
 %wyjebalismy 100 na podstawie czegos, potem wyjebalismy 80 na podstawie 
 %czegos tam innego. A potem po przeczytaniu ich wyjebalismy jescze 16 i zostaly 4
 
-Once we have defined search citeria of our interest, we started literature extration process.
+Once we defined the search citeria of our interest, we started literature extration process.
 Search phrases were combined by using boolean operators OR and AND:
 
 \emph{(nosql OR sql OR nosql sql) AND database AND (comparison OR high performance OR large scale OR scalability)}
   
-We went through data sources to find answer for research questions.
-In ACM digital library we discovered 70 related results, 41 articles were found in IEEEXplore and finally 48 materials in Google Scholar.
-Summing up 159 materials were investigated. 
+We investigated data sources to find answer to research questions.
+
+% w pierwszej interacji otrzymaliśmy
+After the first iteration we received 159 materials. In ACM digital library we discovered 70 related results, 41 articles were found in IEEEXplore and finally 48 materials in Google Scholar.
 
 Based on exclusion criteria some of references were rejected. A lot of examinated works were too basic or were focues only on SQL databases.
+
 % TODO
 % bardziej rozwinąć na jakiej podstawie wywalaliśmy
 % proces iteracyjny 
@@ -183,37 +185,34 @@ Finally we received 4 scientific artices, 1 book, 1 Master Thesis and 1 website 
  
 \Section{Analysis}    
 
-\cite{strauch} w pierwszych rozdziałach swojej pracy opisuje początki powstania baz NoSQL oraz ludzki którzy
-przyczynili się do ich rozwoju. Duży postęp nastąpił podczas rozwoju tzn. Web 2.0 (portale społecznościowe Facebook), serwisy
-internetowe (Amazon, eBay) potrzebowały szybkich rozwiązań mogących przetwarzać dużo danych.
+%\cite{strauch} w pierwszych rozdziałach swojej pracy opisuje początki powstania baz NoSQL oraz ludzki którzy
+%przyczynili się do ich rozwoju. Duży postęp nastąpił podczas rozwoju tzn. Web 2.0 (portale społecznościowe Facebook), serwisy
+%internetowe (Amazon, eBay) potrzebowały szybkich rozwiązań mogących przetwarzać dużo danych.
 
-Autor opisuje zalety baz NoSQL. Należą do ich min. Avoidance of Unneeded Complexity, High Throughput,
-Horizontal Scalability and Running on Commodity Hardware (Machines can be added and removed without causing the same operational efforts to perform sharding in RDBMS cluster-solutions;),
-Movements in Programming Languages and Development Frameworks, High Availability.
+%Autor opisuje zalety baz NoSQL. Należą do ich min. Avoidance of Unneeded Complexity, High Throughput,
+%Horizontal Scalability and Running on Commodity Hardware (Machines can be added and removed without causing the same operational efforts to perform sharding in RDBMS cluster-solutions;),
+%Movements in Programming Languages and Development Frameworks, High Availability.
 
-Równocześnie autor podkreśla że są także minusy baz NoSQL. Większość z dostępnych baz to otwarte oprogramowanie, biznesowi 
-ludzie mogą mieć pewne obawy gdy coś nie bedzie działać (nie ma kogo obwiniać). 
-NoSQL to nic nowego, wcześniej były juz próby stworzenia obiektowej bazy danych.
+%Równocześnie autor podkreśla że są także minusy baz NoSQL. Większość z dostępnych baz to otwarte oprogramowanie, biznesowi 
+%ludzie mogą mieć pewne obawy gdy coś nie bedzie działać (nie ma kogo obwiniać). 
+%NoSQL to nic nowego, wcześniej były juz próby stworzenia obiektowej bazy danych.
 
-Autor prezentuje w dziale Performance vs. Scalability obszerne porównianie między bazami SQL i NoSQL.  
+%Autor prezentuje w dziale Performance vs. Scalability obszerne porównianie między bazami SQL i NoSQL.  
 
-W daleszej części artykułu dokonuje klasyfikacji najpopularniejszych daz NoSQL według 
-dwóch kategori Document Databases (Apache CouchDB, MongoDB) i Column-Orinted Databases (Google’s Bigtable, Cassandra). 
+%W daleszej części artykułu dokonuje klasyfikacji najpopularniejszych daz NoSQL według 
+%dwóch kategori Document Databases (Apache CouchDB, MongoDB) i Column-Orinted Databases (Google’s Bigtable, Cassandra). 
 
-
-\cite{tudorica}
-
-
+%\cite{tudorica}
 
 % TODO pl na podstawie protokolu, tych prac ktore wybralismy, czytami i dokonujemy analizy ich.
 % analiza to badanie kazdej pracy.
 
 
-Good starting point describing NoSQL databases in general, can be found in \cite{survey}, \cite{strauch}, \cite{leavittm} and \cite{prasad}. Interesting 
+Some basic concepts of NoSQL databases, can be found in \cite{survey}, \cite{strauch}, \cite{leavittm} and \cite{prasad}. Interesting 
 comparison of NoSQL and SQL databases was promised in article \cite{cattell}. Although a lot of references points to some popular NoSQL database currently 
 available and commonly used, but the biggest source was found on website \cite{nosql-database} (almost 150 NoSQL databases). Practial aspects of using NoSQL 
 databases in web applications were contained in \cite{tiwari} \cite{orend}, \cite{pokorny}. High performance issues were mentioned in \cite{taniar} and \cite{delis}.
-Hudge amounts of articles refers to cloud solutions (\cite{sakr}, \cite{konstantinou}, \cite{delis}). Some of the articles describes database system with hudge 
+Significant number of the articles refers to cloud solutions (\cite{sakr}, \cite{konstantinou}, \cite{delis}). Some of the articles describes database system with enormous 
 complexity \cite{rizzotti}. 
 
 \Section{Synthesize}   
@@ -225,7 +224,7 @@ complexity \cite{rizzotti}.
 % Mało jest artykułów które konkretnie opisują jakiś scenariusz i zalejacą którą bazę wybrać do tworzonego projektu
 
 In analysed articles only most popular NoSQL databases were described, e.g HBase, MongoDB, Cassandra, SimpleDB.
-Invesitaged works contains valuable information concerning high performance and scalability. 
+Invesitaged works contain valuable information concerning high performance and scalability. 
 
 
 
@@ -241,9 +240,8 @@ Invesitaged works contains valuable information concerning high performance and 
 % nie zostala jeszcze dobrze zliteralizowana i sie fajnie
 
 % Luką jest brak konkretnych przykładów użycia nosql baz danych w aplikacjach webowych 
-Systematic literature review helped us to get to know what are available NoSQL databases,
-% TODO refactor 
-%and how advanced research on large scale and high performace NoSQL databases are.  
+Systematic literature review helped us to get to know what NoSQL databases are available 
+and what do we know known about their performance and scalability.   
 
 Although there are some solutions describing high performance and scalable NoSQL databases, but there  
 is really no specific document which would describe real world scenario like database (type, configuration) for web 
