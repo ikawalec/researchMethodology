@@ -1,0 +1,119 @@
+\documentclass[gray]{beamer}
+%\setbeamertemplate{headline}{\scriptsize{\vspace*{0.3cm}\hspace*{0.3cm}\insertframenumber}} 
+
+
+\setbeamertemplate{footline}[page number]{}
+
+%gets rid of navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+\begin{document}
+\title{Large Scale and High Performance NoSQL Databases in Web Applications \\ Project Proposal}  
+ 
+\author{Mateusz Bilski, mateusz.bilski@gmail.com \\ Ireneusz Kawalec, 180528@student.pwr.wroc.pl} 
+\date{\today} 
+\institute[PWR]{Wroclaw University of Technology\\ Faculty of Electronics \\ Computer Science \\ Internet Engineering}
+
+
+\frame{\titlepage} 
+
+\frame{\frametitle{Plan of presentation}\tableofcontents} 
+
+\section{Introduction}  
+\frame{\frametitle{Introduction} 
+
+``A NoSQL database provides a mechanism for storage and retrieval of data that use looser consistency models 
+than traditional relational databases in order to achieve horizontal scaling and higher availability.''
+
+\vspace{1cm}
+
+Usage:
+\begin{itemize}
+  \item Facebook - Casandra
+  \item Google - Big Table
+  \item SimpleDB - Amazon
+\end{itemize}
+
+}
+
+\section{Outcomes of Systematic Literature Review}  
+\frame{\frametitle{Outcomes of Systematic Literature Review} 
+
+We have done Systematic Literature View for Large Scale and High Performance NoSQL Databases in Web Applications.
+
+\vspace{1cm}
+
+Outcomes:
+\begin{itemize}
+  \item some studies describing NoSQL databases
+  \item no document which describe architecture, configuration and tests results of NoSQL databases for
+large scale systems which requires high perfomance
+\end{itemize}
+
+}
+
+\section{Aims and Objectives}  
+\frame{\frametitle{Aims and Objectives} 
+
+Aims
+\begin{itemize}
+	\item to evaluate performance of NoSQL databases for large scale web applications.
+\end{itemize}
+
+Objectives
+\begin{itemize}
+	\item to compare most used NoSQL databases
+	\item to design architecture of system for high performance and large scale web application using NoSQL databases
+	\item to develop an optimal configuration for prepared architecture for each database
+	\item to measure reading and writing response time of the system for each database
+\end{itemize} 
+
+}
+
+\section{Expected outcomes}  
+\frame{\frametitle{Expected outcomes} 
+
+\begin{itemize}
+  \item comparision of most used NoSQL databases
+  \item architecture and configuration of NoSQL databases which provides high performance on large scale database systems
+  \item tests results of measuring reading/writing response time of each NoSQL databases on prepared architecture and configuration.
+\end{itemize}
+
+}
+
+\section{Research questions and methods}  
+\frame{\frametitle{Research questions and methods} 
+
+Research questions
+\begin{itemize}
+  \item Which NoSQL database is the best for large scale, high performance database systems
+  \item How configure database to gain maximum efficency
+  \item How to carry out database performance testing
+\end{itemize}
+
+\vspace{1cm}
+
+Methods
+\begin{itemize}
+  \item Action Research - for comparision of NoSQL databases
+  \item Experiments - for tests
+\end{itemize}
+
+}
+
+\section{Project plan}  
+\frame{\frametitle{Project plan} 
+
+\begin{enumerate}
+  \item Choose the five most known NoSQL databases
+  \item Compare databases with each other
+  \item Design an architecture of the system
+  \item Find out the configuration for each database to be the most efficient on such architecture
+  \item Measure response times of each database
+\end{enumerate}
+
+}
+
+
+
+\end{document}
