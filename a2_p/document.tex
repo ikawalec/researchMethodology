@@ -14,34 +14,68 @@
 \institute[PWR]{Wroclaw University of Technology\\ Faculty of Electronics \\ Computer Science \\ Internet Engineering}
 
  
-\frame{\titlepage}  
+\frame{\titlepage}    
  
 \frame{\frametitle{Plan of presentation}\tableofcontents} 
 
 \section{Introduction}   
 
-\frame{\frametitle{Introduction}    
+\frame{\frametitle{What is database?}    
 
-A database is an organized collection of data.
-Two types of databases:
+A database is an organized collection of data. It is designed to offer an organized mechanism for storing, 
+managing and retrieving information. 
+
+\vspace{1cm}
+
+Databases can be classified according to their organizational approach. Two main types can be distingeshed: 
 \begin{itemize}
-  \item relational - information is represented as a collection of tables, one or more distingueshed key used for building relations
-  \item object - information is represented in the form of objects as used in object-oriented programming
-\end{itemize}
+  \item relational database
+  \item no-relational database  
+\end{itemize} 
 
 }
 
-\frame{\frametitle{Introduction} 
+\frame{\frametitle{Relational database}
+
+In Relational Database:
+\begin{itemize}
+  \item information is represented as a collection of tables
+  \item the table consist of columns and rows
+  \item each column contains may have a different type of attribute
+  \item one attribute in table can be distingueshed as primary key
+  \item foreign keys can be used to create relations between tables 
+\end{itemize}
+
+% TODO img 
+
+}
+%\frame{\frametitle{Object database}
+
+%In Object Database information is represented in the form of objects as used in object-oriented programming.
+%It extends relational data model: Simple and complex objects, attributes, methods, classes, inheritance, references.
+% TODO img
+
+%}
+
+
+%\frame{\frametitle{The problem}
+
+% Relational databases are not efficient in system which huge load. 
+
+% problemem jest to że relacyjne bazy danych nie sprawdzają się w systemach gdzie wprowadza się dużo danych
+
+%}
+
+\frame{\frametitle{No-relational database} 
 
 A NoSQL database provides a mechanism for storage and retrieval of data that use looser consistency models than 
 traditional relational databases in order to achieve horizontal scaling and higher availability. 
 
 %Some authors refer to them as "Not only SQL" to emphasize that some NoSQL systems do allow SQL-like query language to be used.
 
-
 \vspace{1cm}
 
-Usage:
+Examples:
 \begin{itemize}
   \item Facebook - Casandra
   \item Google - Big Table
@@ -58,8 +92,8 @@ We have done Systematic Literature View for Large Scale and High Performance NoS
 
 Outcomes:
 \begin{itemize}
-  \item some studies describing NoSQL databases
-  \item no document which describe architecture, configuration and tests results of NoSQL databases for
+  \item some studies describing most popular NoSQL databases, i.e. MongoDB, Casandra, BigTable
+  \item no document describing architecture, configuration and tests results of usage NoSQL databases for
 large scale systems which requires high performance
 \end{itemize}
 
