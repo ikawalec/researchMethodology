@@ -14,7 +14,7 @@
 \institute[PWR]{Wroclaw University of Technology\\ Faculty of Electronics \\ Computer Science \\ Internet Engineering}
 
  
-\frame{\titlepage}    
+\frame{\titlepage}     
  
 \frame{\frametitle{Plan of presentation}\tableofcontents} 
    
@@ -153,9 +153,19 @@ Methods
 
 \begin{enumerate}
   \item Choose the five most known NoSQL databases
+	% 1.1 przejrzenie literatury pod wzledem baz danych NoSQL
+	% 1.2 wybranie 5ciu baz najczesciej wystepujacych w wynikach wyszukiwania 
   \item Design an architecture of the system
+    % 2.1 jakie metody stosuje sie przy projektowaniu duzych systemow bazodanowych
+    % 2.2 ktore z nich zapewniaja high performance
   \item Find out the configuration for each database to be the most efficient on prepared architecture
+    % tuningowanie względem maszyny (ram, dysk, procek, sieciówka) 
+    % tuningowanie względem danych 
   \item Measure response times of each database
+    \begin{enumerate}
+      \item read time  
+      \item write time 
+    \end{enumerate}  
 \end{enumerate}
 
 }
