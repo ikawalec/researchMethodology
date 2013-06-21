@@ -132,12 +132,12 @@ Objectives
 \frame{\frametitle{Research questions and methods} 
 
 Research questions
-\begin{itemize}
+\begin{enumerate}
   \item What is the best architecture for large scale, high performance NoSQL databases?
   \item How to configure NoSQL databases to gain maximum efficiency?
-  \item How to carry out database performance testing?
+  \item What are reading and writing response times for top used NoSQL databases?
   \item Which NoSQL database is the best for large scale, high performance database systems?
-\end{itemize}
+\end{enumerate}
 
 
 Methods
@@ -152,19 +152,27 @@ Methods
 \frame{\frametitle{Project plan} 
 
 \begin{enumerate}
-  \item Choose the five most known NoSQL databases
-	% 1.1 przejrzenie literatury pod wzledem baz danych NoSQL
-	% 1.2 wybranie 5ciu baz najczesciej wystepujacych w wynikach wyszukiwania 
+  \item Choose the five most used NoSQL databases
+	\begin{enumerate}
+	  \item Find articles describing NoSQL databases
+	  \item Choose five the most often used databases according to articles 
+	\end{enumerate}
   \item Design an architecture of the system
-    % 2.1 jakie metody stosuje sie przy projektowaniu duzych systemow bazodanowych
-    % 2.2 ktore z nich zapewniaja high performance
+	\begin{enumerate}
+	  \item Find methods which are used for building large scale database systems
+	  \item Find which methods ensure high performance
+	  \item Use methods to design an architecture
+	\end{enumerate}
   \item Find out the configuration for each database to be the most efficient on prepared architecture
-    % tuningowanie względem maszyny (ram, dysk, procek, sieciówka) 
-    % tuningowanie względem danych 
+    \begin{enumerate}
+	  \item Find the optimization techniques for database dedicated systems
+	  \item Find the database configuration to optimize operations on lots of data
+	  \item For each database build system for designed architecture using prepared configuration
+	\end{enumerate}
   \item Measure response times of each database
     \begin{enumerate}
-      \item read time  
-      \item write time 
+      \item Prepare test suites
+      \item Measure read and write time   
     \end{enumerate}  
 \end{enumerate}
 
@@ -183,9 +191,8 @@ Mateusz Bilski, Ireneusz Kawalec
 \emph{Systematic Literature Review of Large Scale and High Performance NoSQL Databases in Web Applications}. Wroclaw University of Technology
   
   
-% TODO dostęp online  
 \bibitem{zxc}  
-\emph{List of NoSQL Databases} \\
+\emph{List of NoSQL Databases. Access at 21.06.2013} \\
 \url{http://nosql-database.org/}
 \end{thebibliography}
 
