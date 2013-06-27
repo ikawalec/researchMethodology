@@ -31,7 +31,7 @@ databases based on mean response time (read, write operations).
 
 \end{abstract} 
 
-keywords: database, NoSQL, large scale, high performance, web application
+keywords: database, NoSQL, large scale, high performance, web application 
 
 %-------------------------------------------------------------------------
 
@@ -56,7 +56,11 @@ provided (in these case key and value are simple types). More
 advanced solutions insted of returning simple type as a value, returns 
 the object. The object has no stricted schema.
 
-% Horizontal scaling is ..  
+Databases are used to build information systems. Large systems contains a lots of data and manipulate with them
+every seconds. Such systems must provide high performance (being able to handle thousand of reading and writing operations
+per second) and high availability (often over 99.9999\% of uptime in a year). Furthermore systems consist of many servers, so 
+they should be horizotaly scalable - has a ability to add more nodes to a system, such as adding a new computer to a distributed 
+application. This allows to increase performance and availability.
 
 \Section{Introduction}
 
@@ -81,17 +85,19 @@ database (type, configuration) for web application able to handle millions of us
 %------------------------------------------------------------------------- 
 \Section{Aims and Objectives}
 
-Aims
+Aim
 \begin{itemize}
 	\item to evaluate performance of NoSQL databases for large scale web applications.
 \end{itemize}
+
+\vspace{1cm}
 
 Objectives
 \begin{itemize}
 	\item to design architecture of system for high performance and large scale web application using NoSQL databases
 	\item to develop an optimal configuration for prepared architecture for each database
 	\item to measure reading and writing response time of the system for each database
-\end{itemize}
+\end{itemize} 
 
 
 \Section{Expected Outcomes}
@@ -107,12 +113,12 @@ The expected outcomes of the research are:
 
 In our paper we want to give answers to the following questions:
 
-\begin{itemize}
+\begin{enumerate}
   \item What is the best architecture for large scale, high performance NoSQL databases?
   \item How to configure NoSQL databases to gain maximum efficiency?
-  \item How to carry out database performance testing?
+  \item What are reading and writing response times for top used NoSQL databases?
   \item Which NoSQL database is the best for large scale, high performance database systems?
-\end{itemize}
+\end{enumerate}
  
 \Section{Methods}
 
@@ -160,6 +166,15 @@ system for each database.
 	NoSQL databases. We explored available digital libraries such as ACM, IEEEXplore,
 	Google Scholar and after couple of interations and rejections based on
 	excludion criteria we received following list of NoSQL databases: MongoDB, Cassandra, CouchDB, Redis and Voldemort.  
+
+\section{Threats to validity}
+
+\begin{itemize}
+	\item choosed databases are the most used. There may exists better but not popular database.
+	\item to design architecture and prepare configuration we used documentation and articles. Results might be better if database experts would be involved
+	\item machines used by used to perform load testing (bought in amazon cloud) might be distributed between many local networks. That would 
+	couse decrease of performance and the results might be better in optimized environment
+\end{itemize}
 
 \begin{thebibliography}{9}  
 
