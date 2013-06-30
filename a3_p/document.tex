@@ -36,22 +36,45 @@ Databases can be classified according to their organizational approach. Two main
 
 \frame{\frametitle{Relational database}
 
-In Relational Database:
 \begin{itemize}
-  \item information is represented as a collection of tables
+  \item information is represented as a collection of tables with strict schema
   \item the table consist of columns and rows
-  \item each column contains may have a different type of attribute
-  \item one attribute in table can be distingueshed as primary key
-  \item foreign keys can be used to create relations between tables 
+  \item values in column have defined type (number, text,  date, etc)
+  \item primary key identifies a row 
+  \item foreign keys are used to make connections between tables 
 \end{itemize}
+
+\begin{center}
+	\includegraphics[width=0.7\paperwidth]{img/sql.png}
+\end{center} 
 
 }
 
+\frame{\frametitle{No-relational database}  
 
-\frame{\frametitle{No-relational database} 
+\begin{itemize}
+  \item information is represented as objects
+  \item the objects are schema-less
+  \item uses different models of store 
+\end{itemize}  
+ 
+\begin{center}
+	\includegraphics[width=0.6\paperwidth]{img/nosql.png}
+\end{center}
 
-A NoSQL database provides a mechanism for storage and retrieval of data that use looser consistency models than 
-traditional relational databases in order to achieve horizontal scaling and higher availability. 
+}
+
+\frame{\frametitle{No-relational database props}
+	\begin{itemize}
+	  \item Big data handling
+	  \item Performance improvment 
+	  \item Flexible data model
+	  \item Scalability 
+	\end{itemize} 
+ 
+%A NoSQL database provides a mechanism for storage and retrieval of data that
+%% use looser consistency models than traditional relational databases in order
+% to achieve horizontal scaling and higher availability.
 
 \vspace{1cm}
 
@@ -61,6 +84,7 @@ Examples:
   \item Google - Big Table
   \item Amazon - SimpleDB 
 \end{itemize}
+
 }
 
 \section{Research questions and methods}  
@@ -139,6 +163,35 @@ Methods
 
 }
 
+\frame{\frametitle{Selected databses}
+Top five databases extracted from literature:
+	\begin{itemize}
+	  \item MongoDB, CouchDB (Document store)
+	  \item Voldemort, Redis (Key value store)
+	  \item Cassandra (Column family store)
+	\end{itemize}
+}
+
+\frame{\frametitle{Measure response times}
+
+Measure assumptions:
+\begin{itemize}
+  \item database consists of 1 miltion different objects
+  \item read / write action is counted as one operation
+  \item we are interested in measuring how much read / write operation per
+  second database can handle (database throughput)
+  \item tests should be automatic
+\end{itemize}
+ 
+}
+
+\frame{\frametitle{Which NoSQL database is the best for large scale, high
+performance database systems?}
+
+\includegraphics[width=0.9\paperwidth]{img/results.png} 
+
+}
+
 \section{Threats to validity}
 
 \frame{\frametitle{Threats to validity}
@@ -146,7 +199,7 @@ Methods
 	\item choosed databases are the most used. There may exist better but not popular databases.
 	\item to design architecture and prepare configuration we used documentation and articles. Results might be better if database experts would be involved
 	\item machines used by us to perform load testing (bought in amazon cloud) might be distributed between many local networks. That would 
-	couse decrease of performance and the results might be better in optimized environment
+	cause decrease of performance and the results might be better in optimized environment
 \end{itemize}
 
 }
